@@ -7,10 +7,10 @@ steps:
 
 - id: g"Go Test"
   name: "gcr.io/cloud-builders/go"
-  args: ["test","calc_test"]
+  args: ["test","src/calc_test"]
   env: ["GOPATH=."]
 
 - id: " RUN "
   name: "gcr.io/cloud-builders/go"
-  args: ["run","helloworld"]
+  args: ["run","src/main"]
   env: ["GOPATH=."]
