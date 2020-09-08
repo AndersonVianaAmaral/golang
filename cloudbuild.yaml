@@ -14,3 +14,5 @@ steps:
 name: "gcr.io/cloud-builders/go"
 args: ["run","helloworld"]
 env: ["GOPATH=."]
+
+- images: 'gcr.io/$PROJECT_ID/go'
